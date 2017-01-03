@@ -1,0 +1,26 @@
+.link {
+  stroke: #777;
+  stroke-opacity: 0.5;
+  stroke-width: 1.7px;
+}
+
+.node circle {
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+
+.node text:first-of-type {
+  display: none;
+  font: 12px sans-serif;
+  fill: #2980b9 !important;
+}
+
+.node:hover text:first-of-type {
+  display: inline;
+
+}
+
+.node:hover circle {
+  fill: #e74c3c !important;
+}

@@ -1,0 +1,23 @@
+<div class="jumbotron text-center">
+  <h1>See Me</h1>
+  <p>{{ message }}</p>
+<div ng-if="checkMe()">
+  <div class="row bootstrap snippets">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="panel widget">
+          <div class="widget-header bg-primary"></div>
+          <div class="widget-body text-center">
+            <img  class="widget-img img-circle img-border-light" ng-src="{{ me.photo }}"/>
+            <h4  style="text-transform: uppercase;" class="mar-no">{{ me.name }}</h4>
+            <p>
+            <p style="text-transform: uppercase; font-family: 'Roboto', sans-serif; font-size: 15px;" class="text-muted mar-btm">{{ me.location }}</p>
+
+            <div class="pad-ver">
+              <button class="btn btn-primary">Followers: {{ me.followers }}</button>
+              <button class="btn btn-success">Friends: {{ me.friends }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>

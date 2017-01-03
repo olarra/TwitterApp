@@ -1,0 +1,31 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus  {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.content {min-height: 1000px; }
+
+/* Set gray background color and 100% height */
+.sign_in {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+      .sign_in {
+        height: auto;
+        padding: 15px;
+      }
+
+.main_content {height: auto;}
+    }

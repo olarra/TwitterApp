@@ -1,0 +1,36 @@
+<div class="jumbotron text-center">
+  <h1>See My Followers</h1>
+  <p>{{ message }}</p>
+<div ng-if="checkFollowers()">
+  <form  class ="search">
+    <input type="text" ng-model="search" placeholder="Search..">
+  </form>
+  <br>
+
+  <table class="table-style">
+    <thead>
+    <tr>
+      <th>name</th>
+      <th>photo</th>
+      <th>location</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr dir-paginate="follower in followers |filter:search |itemsPerPage:5" >
+      <td>{{ follower.name }}</td>
+      <td> <img ng-src="{{ follower.photo }}"/> </td>
+      <td>{{ follower.location }}</td>
+      <td>{{ follower.description }}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <dir-pagination-controls
+       max-size="10"
+       direction-links="true"
+       boundary-links="true" >
+    </dir-pagination-controls>
+</div>
+
+</div>
